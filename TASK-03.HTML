@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <CENter><H1>LAB: 04 TASK_03</H1></CENter>
+    <p style="color: blue; text-align: center;">CLICK BELOW BUTTON</p>
+
+    <button style="position: absolute; left: 44% ;border-radius: 1.5em; color: red;" onclick="myFunction()">PRESS BUTTON FOR INPUT</button>
+    
+<br>
+<br>
+<p style="text-align: center;" id="output"></p>
+
+<script>
+function myFunction() {
+
+  do
+  {
+  let response = prompt("Alarm is ringing//Press S to snooze and D to dismiss");
+  if(response == "D" || response =='d')
+  {
+  document.getElementById("output").innerHTML = "Good Morning";
+  
+  }
+  else if (response == "S" || response =='s') 
+  {
+document.getElementById("output").innerHTML = "Snoozed.";
+  }
+  else
+  {
+  document.getElementById("output").innerHTML = "Invalid Input Program Ended";
+  
+  }
+
+}
+while(response=="S");
+}
+</script>
+
+</body>
+</html>

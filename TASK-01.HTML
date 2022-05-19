@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <CENter><H1>LAB: 04 TASK_01</H1></CENter>
+<p style="color: blue; text-align: center;">CLICK BELOW BUTTON</p>
+
+<button style="position: absolute; left: 44% ;border-radius: 1.5em; color: red;" onclick="myFunction()">PRESS BUTTON FOR INPUT</button>
+
+<br>
+<br>
+<p style="text-align: center;" id="output"></p>
+
+<script>
+function myFunction() {
+
+  
+  let operator = prompt("Enter operator");
+  
+  if(operator == "+")
+  {
+  let num1 = parseFloat(prompt("Enter num1"));
+  let num2 = parseFloat(prompt("Enter num2"));
+  let result=(num1+num2);
+   alert(result);
+  
+  }
+  else if (operator == "-") 
+  {
+  let num1 = parseFloat(prompt("Enter num1"));
+  let num2 = parseFloat(prompt("Enter num2"));
+  let result=num1-num2;
+   alert(result);
+  
+}
+  else if (operator == "*") 
+  {
+  let num1 = parseFloat(prompt("Enter num1"));
+  let num2 = parseFloat(prompt("Enter num2"));
+  let result=num1*num2;
+   alert(result);
+}
+  else if (operator == "/") 
+  {
+  let num1 = parseFloat(prompt("Enter num1"));
+  let num2 = parseFloat(prompt("Enter num2"));
+  let result=num1/num2;
+   alert(result);
+}
+  else
+  {
+  
+  alert("Wrong operator Input");
+  }
+
+}
+</script>
+
+</body>
+</html>
